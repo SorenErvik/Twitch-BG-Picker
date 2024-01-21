@@ -39,6 +39,29 @@ function colorReveal() {
     element.classList.toggle('hidden');
   });
 }
+
+function effectReveal() {
+  // Get all elements with the class 'effects'
+  const effectElements = document.querySelectorAll('.effects');
+
+  // Toggle the 'hidden' class for each 'effects' element
+  effectElements.forEach((element) => {
+    element.classList.toggle('hidden');
+  });
+
+}
+
+function wallpaperReveal() {
+  // Get all elements with the class 'wallpapers'
+  const wallpaperElements = document.querySelectorAll('.wallpapers');
+
+  // Toggle the 'hidden' class for each 'wallpapers' element
+  wallpaperElements.forEach((element) => {
+    element.classList.toggle('hidden');
+  });
+
+}
+
 // Color Functions
 function partyPurple() {
   document.querySelector('body').style.backgroundColor = 'rgba(241,63,247,1)'
@@ -103,4 +126,40 @@ function partyStrobe() {
 // Wallpaper functions
 function bg1() {
   document.querySelector('body').style.backgroundImage = "/img/bg-1.jpg"
+}
+
+function bg2() {
+  document.querySelector('body').style.backgroundImage = "/img/bg-2.avif"
+}
+
+function bg3() {
+  document.querySelector('body').style.backgroundImage = "/img/bg-3.jpg"
+}
+
+function bg4() {
+  document.querySelector('body').style.backgroundImage = "/img/bg-4.jpg"
+}
+
+function bg5() {
+  document.querySelector('body').style.backgroundImage = "/img/bg-5.jpg"
+}
+
+function bg6() {
+  document.querySelector('body').style.backgroundImage = "/img/bg-6.jpg"
+}
+
+function bg7() {
+  document.querySelector('body').style.backgroundImage = "/img/bg-7.jpg"
+}
+
+function bg8() {
+  document.querySelector('body').style.backgroundImage = "/img/bg-8.jpg"
+}
+
+function bg9() {
+  document.querySelector('body').style.backgroundImage = "/img/bg-9.jpg"
+}
+
+function bg10() {
+  document.querySelector('body').style.backgroundImage = "/img/bg-10.jpg"
 }
