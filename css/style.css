@@ -20,7 +20,6 @@ img{
 }
 ul{
   width: 100px;
-  height: 200px;
   border: 3px solid black;
   margin: 0 auto;
   list-style: none;
@@ -42,4 +41,39 @@ li{
 }
 #blue{
   background: rgba(0,254,255);
+}
+#red{
+  background: rgba(255,0,0,1);
+}
+#yellow{
+  background: rgba(255,255,0,1);
+}
+#orange{
+  background: rgba(255,127,0,1);
+}
+#pink{
+  background: rgba(255,0,255,1);
+}
+
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#container {
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }
