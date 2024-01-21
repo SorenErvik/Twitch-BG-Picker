@@ -33,6 +33,14 @@ li{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+#colors, #effects, #wallpapers {
+  border: 1px solid black;
+  width: 150%;
+  display: flex;
+  justify-content: center;
+}
+
+
 #purple{
   background: rgba(241,63,247,1);
 }

@@ -111,16 +111,21 @@ function partyBlur() {
 
 function partyStrobe() {
   const body = document.querySelector('body');
-  let isWhite = true;
+  let isOriginalColor = true;
+  let originalColor;
+
+  // Get the current background color
+  const computedStyle = window.getComputedStyle(body);
+  originalColor = computedStyle.backgroundColor;
 
   setInterval(() => {
-    if (isWhite) {
-      body.style.backgroundColor = '#fff';
+    if (isOriginalColor) {
+      body.style.backgroundColor = '#000'; // Set to black
     } else {
-      body.style.backgroundColor = '#000'; // Set the alternate color
+      body.style.backgroundColor = originalColor; // Set to the original color
     }
-    isWhite = !isWhite;
-  }, 100); // Adjust the interval (in milliseconds) based on your desired strobe speed
+    isOriginalColor = !isOriginalColor;
+  }, 1000); // Adjust the interval (in milliseconds) based on your desired strobe speed
 }
 
 // Wallpaper functions
