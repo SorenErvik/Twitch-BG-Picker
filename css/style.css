@@ -33,13 +33,23 @@ li{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-#colors, #effects, #wallpapers {
+
+h1, h1 + img {
+  padding-left: 89px;
+}
+#tabsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+}
+#colors, #effects, #wallpapers, #reset {
   border: 1px solid black;
   width: 150%;
   display: flex;
   justify-content: center;
+  background-color: white;
+  color: black;
 }
-
 
 #purple{
   background: rgba(241,63,247,1);
@@ -59,12 +69,21 @@ li{
 #orange{
   background: rgba(255,127,0,1);
 }
-#pink{
-  background: rgba(255,0,255,1);
+#brown{
+  background: rgb(75, 44, 8);
 }
 
-
-
+#pulse {
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @keyframes pulse {
   0% {
@@ -81,7 +100,22 @@ li{
 #container {
   display: flex;
 }
-
+ul.colors {
+  height: 460px;
+}
+ul.effects {
+  height: 130px;
+}
+li > img {
+  width: 100%;
+}
+ul.wallpapers {
+  width: 50%;
+}
+li.wallpapers {
+  width: auto;
+  height: auto;
+}
 .hidden {
   display: none;
 }
